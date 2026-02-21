@@ -4,7 +4,7 @@ class CoffeeOrder
 {
     static void Main()
     {
-        // User Input
+       
         Console.Write("Enter Coffee Name: ");
         string coffeeName = Console.ReadLine();
 
@@ -26,15 +26,15 @@ class CoffeeOrder
         Console.Write("Is Takeaway (true/false): ");
         bool isTakeaway = Convert.ToBoolean(Console.ReadLine());
 
-        // Calculations
+     
         double coffeeCost = pricePerCup * numberOfCups;
         double sugarCost = sugarPortions * 0.2;
         double totalOrderPrice = coffeeCost;
 
-        totalOrderPrice += sugarCost;       // compound operator
-        totalOrderPrice += toppingPrice;    // compound operator
+        totalOrderPrice += sugarCost;     
+        totalOrderPrice += toppingPrice;    
 
-        // Output
+        
         Console.WriteLine("\n--- Order Details ---");
         Console.WriteLine("Coffee Name: " + coffeeName);
         Console.WriteLine("Price per Cup: " + pricePerCup);
@@ -49,4 +49,5 @@ class CoffeeOrder
         Console.WriteLine("Sugar Cost: " + sugarCost);
         Console.WriteLine("Total Order Price: " + totalOrderPrice);
     }
+
 }
